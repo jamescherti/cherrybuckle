@@ -4,7 +4,7 @@ SRC 	:= main.c
 VERSION	:= 1.5.1
 
 PATH_AUDIO ?= "./wav"
-PATH_CHERRY_MX_BLUE_AUDIO ?= "./cherrymxbluesounds"
+PATH_CHERRY_MX_BLUE_AUDIO ?= "./wav_cherrymxblue"
 
 CFLAGS	?= -O3 -g
 LDFLAGS ?= -g
