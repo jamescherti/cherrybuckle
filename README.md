@@ -1,11 +1,12 @@
-Nostalgia bucklespring keyboard sound
-=====================================
-
-Copyright 2016 Ico Doornekamp
+Nostalgia bucklespring / Cherry MX Blue keyboard sound
+==========================================================================
 
 This project emulates the sound of my old faithful IBM Model-M space saver
 bucklespring keyboard while typing on my notebook, mainly for the purpose of
 annoying the hell out of my coworkers.
+
+You can also use Cherry MX Blue sounds, pulled from the keyclacker
+project.
 
 ![Model M](img/model-m.jpg)
 ![Buckle](img/buckle.gif)
@@ -21,65 +22,10 @@ ScrollLock twice (but be aware that those ScrollLock events _are_ delivered to
 the application); same to unmute. The keycode for muting can be changed with
 the `-m` option. Use keycode 0 to disable the mute function.
 
-You can also use cherry mx blue sounds, pulled from the
-keyclacker project https://github.com/spajus/keyclacker
-
 Installation
 ------------
 
 [![Packaging status](https://repology.org/badge/tiny-repos/bucklespring.svg)](https://repology.org/project/bucklespring/versions)
-
-### Debian
-
-Bucklespring is available in the latest Debian and Ubuntu dev-releases, so you can
-install with
-
-```
-$ sudo apt-get install bucklespring
-```
-
-### VoidLinux
-
-Bucklespring is available in the VoidLinux repositories, so you can install with
-
-```
-$ sudo xbps-install -S bucklespring
-```
-
-### FreeBSD
-
-Bucklespring can be installed via package:
-
-```
-$ pkg install bucklespring
-```
-
-or built via port:
-
-```
-$ cd /usr/ports/games/bucklespring
-$ make install clean
-```
-
-### Linux, building from source
-
-To compile on debian-based linux distributions, first make sure the require
-libraries and header files are installed, then simply run `make`:
-
-#### Dependencies on Debian
-```
-$ sudo apt-get install libopenal-dev libalure-dev libxtst-dev
-```
-
-#### Dependencies on Arch Linux
-```
-$ sudo pacman -S openal alure libxtst
-```
-
-#### Dependencies on Fedora Linux
-```
-$ sudo dnf install gcc openal-soft-devel alure-devel libX11-devel libXtst-devel
-```
 
 #### Building
 ```
@@ -96,17 +42,6 @@ require special permissions for buckle to open the devices, though. Build with
 $ make libinput=1
 ```
 
-#### Using snap on Ubuntu (since 16.04) and other distros
-
-```
-$ sudo snap install bucklespring
-$ bucklespring.buckle
-```
-
-The snap includes the OpenAL configuration tweaks mentioned in this README.
-See http://snapcraft.io/ for more info about Snap packages
-
-
 ### MacOS
 
 I've heard rumours that bucklespring also runs on MacOS. I've been told that
@@ -114,7 +49,7 @@ the following should do:
 
 ```
 $ brew install alure pkg-config
-$ git clone https://github.com/zevv/bucklespring.git && cd bucklespring
+$ git clone https://github.com/jamescherti/bucklespring-cherrymxblue && cd bucklespring
 $ sed -i '' 's/-Wall -Werror/-Wall/' Makefile
 $ make
 $ ./buckle
@@ -191,3 +126,39 @@ properly tuning OpenAL for bucklespring.
  allow-moves = true
  ````
 
+Authors
+------------
+This version of bucklespring is maintained by [James Cherti](https://www.jamescherti.com/).
+
+Ico Doornekamp (Original author)
+Egor
+Ico Doornekamp
+Jakub Wilk
+Peter Hofmann
+Marco Trevisan
+nofal (Cherry MX sounds the options)
+Marco Trevisan
+Member1221
+mirabilos
+Alex Bertram
+Alexander Willner
+Anjan Momi
+Anton Karmanov
+Clipsey
+Dominik George
+Emanuel Haupt
+Jan Chren (rindeal)
+Jan Chren
+Jeroen Knoops
+Jeroen Knoops
+Nisker
+Peter Tonoli
+Sebastian Morr
+Stephen Gelman
+Vladislav Khvostov
+jeromenerf
+qu1gl3s
+rabin-io
+somini
+tensorknower69
+tnagorra

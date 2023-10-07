@@ -80,7 +80,7 @@ static int muted = 0;
 static const char short_opts[] = "cd:fg:hlm:Mp:s:bv";
 
 static const struct option long_opts[] = {
-	{ "cherrymxblue",   no_argument,       NULL, 'c' },
+	{ "cherrymxblue",   no_argument,       NULL, 'b' },
 	{ "device",         required_argument, NULL, 'd' },
 	{ "fallback-sound", no_argument,       NULL, 'f' },
 	{ "gain",           required_argument, NULL, 'g' },
@@ -107,6 +107,7 @@ int main(int argc, char **argv)
 			       short_opts, long_opts, &idx)) != -1) {
 		switch(c) {
 			case 'b':
+				fprintf(stderr, "Using Cherry MX Blue sounds\n");
 				opt_fallback_sound = 1;
 				opt_path_audio = PATH_CHERRY_MX_BLUE_AUDIO;
 			case 'd':
@@ -214,7 +215,7 @@ static void usage(char *exe)
 		"\n"
 		"options:\n"
 		"\n"
-		"  -c, --cherrymxblue        use cherry mx blue sounds instead\n"
+		"  -b, --cherrymxblue        use Cherry MX Blue sounds instead\n"
 		"  -d, --device=DEVICE       use OpenAL audio device DEVICE\n"
 		"  -f, --fallback-sound      use a fallback sound for unknown keys\n"
 		"  -g, --gain=GAIN           set playback gain [0..100]\n"
