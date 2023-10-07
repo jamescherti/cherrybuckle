@@ -22,10 +22,12 @@ ScrollLock twice (but be aware that those ScrollLock events _are_ delivered to
 the application); same to unmute. The keycode for muting can be changed with
 the `-m` option. Use keycode 0 to disable the mute function.
 
+Links
+------------
+- GitHub: https://github.com/jamescherti/bucklespring-cherrymxblue
+
 Installation
 ------------
-
-[![Packaging status](https://repology.org/badge/tiny-repos/bucklespring.svg)](https://repology.org/project/bucklespring/versions)
 
 #### Building
 ```
@@ -130,7 +132,7 @@ Authors
 ------------
 - Ico Doornekamp (Original author)
 - nofal (Cherry MX sounds)
-- [James Cherti](https://www.jamescherti.com/)
+- [James Cherti](https://www.jamescherti.com/) (The maintainer of [this version of bucklespring](https://github.com/jamescherti/bucklespring-cherrymxblue), which includes the version maintained by Ico Doornekamp and the pull request by nofal)
 - Egor
 - Ico Doornekamp
 - Jakub Wilk
