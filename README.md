@@ -128,37 +128,36 @@ properly tuning OpenAL for bucklespring.
 
 Authors
 ------------
-This version of bucklespring is maintained by [James Cherti](https://www.jamescherti.com/).
-
-Ico Doornekamp (Original author)
-Egor
-Ico Doornekamp
-Jakub Wilk
-Peter Hofmann
-Marco Trevisan
-nofal (Cherry MX sounds the options)
-Marco Trevisan
-Member1221
-mirabilos
-Alex Bertram
-Alexander Willner
-Anjan Momi
-Anton Karmanov
-Clipsey
-Dominik George
-Emanuel Haupt
-Jan Chren (rindeal)
-Jan Chren
-Jeroen Knoops
-Jeroen Knoops
-Nisker
-Peter Tonoli
-Sebastian Morr
-Stephen Gelman
-Vladislav Khvostov
-jeromenerf
-qu1gl3s
-rabin-io
-somini
-tensorknower69
-tnagorra
+- Ico Doornekamp (Original author)
+- nofal (Cherry MX sounds)
+- [James Cherti](https://www.jamescherti.com/)
+- Egor
+- Ico Doornekamp
+- Jakub Wilk
+- Peter Hofmann
+- Marco Trevisan
+- Marco Trevisan
+- Member1221
+- mirabilos
+- Alex Bertram
+- Alexander Willner
+- Anjan Momi
+- Anton Karmanov
+- Clipsey
+- Dominik George
+- Emanuel Haupt
+- Jan Chren (rindeal)
+- Jan Chren
+- Jeroen Knoops
+- Jeroen Knoops
+- Nisker
+- Peter Tonoli
+- Sebastian Morr
+- Stephen Gelman
+- Vladislav Khvostov
+- jeromenerf
+- qu1gl3s
+- rabin-io
+- somini
+- tensorknower69
+- tnagorra
