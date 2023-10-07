@@ -132,7 +132,7 @@ Authors
 ------------
 - Ico Doornekamp (Original author)
 - nofal (Cherry MX sounds)
-- [James Cherti](https://www.jamescherti.com/) (The maintainer of [this version of bucklespring](https://github.com/jamescherti/bucklespring-cherrymxblue), which includes the version maintained by Ico Doornekamp and the pull request by nofal)
+- [James Cherti](https://www.jamescherti.com/) (The maintainer of [bucklespring-cherrymxblue](https://github.com/jamescherti/bucklespring-cherrymxblue), which includes the version maintained by Ico Doornekamp and the pull request by nofal)
 - Egor
 - Ico Doornekamp
 - Jakub Wilk
