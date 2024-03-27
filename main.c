@@ -210,7 +210,7 @@ out:
 static void usage(char *exe)
 {
 	fprintf(stderr, 
-		"bucklespring version " VERSION "\n"
+		"cherrybuckle version " VERSION "\n"
 		"usage: %s [options]\n"
 		"\n"
 		"options:\n"

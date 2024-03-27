@@ -1,14 +1,14 @@
 
-NAME   	:= buckle
+NAME   	:= cherrybuckle
 SRC 	:= main.c
 VERSION	:= 1.5.1
 
 PATH_AUDIO ?= "./wav"
 PATH_CHERRY_MX_BLUE_AUDIO ?= "./wav_cherrymxblue"
 
-CFLAGS	?= -O2 -g
+CFLAGS	?= -O3 -g
 LDFLAGS ?= -g
-CFLAGS  += -Wall -Werror 
+CFLAGS  += -Wall -Werror
 CFLAGS  += -DVERSION=\"$(VERSION)\"
 CFLAGS  += -DPATH_AUDIO=\"$(PATH_AUDIO)\"
 CFLAGS  += -DPATH_CHERRY_MX_BLUE_AUDIO=\"$(PATH_CHERRY_MX_BLUE_AUDIO)\"
@@ -20,11 +20,11 @@ ifdef mingw
  LDFLAGS += -mwindows -static-libgcc -static-libstdc++
  LIBS    += -Lwin32/lib -lALURE32 -lOpenAL32
  SRC     += scan-windows.c
-else 
+else
  OS := $(shell uname)
  ifeq ($(OS), Darwin)
   BIN     := $(NAME)
-  PKG_CONFIG_PATH := "./mac/lib/pkgconfig" 
+  PKG_CONFIG_PATH := "./mac/lib/pkgconfig"
   LIBS    += $(shell PKG_CONFIG_PATH=$(PKG_CONFIG_PATH) pkg-config --libs alure openal)
   CFLAGS  += $(shell PKG_CONFIG_PATH=$(PKG_CONFIG_PATH) pkg-config --cflags alure openal)
   LDFLAGS += -framework ApplicationServices -framework OpenAL
