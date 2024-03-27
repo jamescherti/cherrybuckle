@@ -30,8 +30,10 @@ To temporarily silence Cherrybuckle, for example, to enter secrets, press Scroll
 
 Debian/Ubuntu dependencies:
 - libalure-dev
-- libxtst-dev
+- libopenal-dev
 - libx11-dev
+- libxtst-dev
+- pkg-config
 
 ##### Building on GNU/Linux
 
@@ -91,6 +93,7 @@ options:
   -m, --mute-keycode=CODE   use CODE as mute key (default 0x46 for scroll lock)
   -M, --mute                start the program muted
   -c, --no-click            don't play a sound on mouse click
+  -k, --no-keyboard         don't play a sound on keyboard press
   -h, --help                show help
   -l, --list-devices        list available OpenAL audio devices
   -p, --audio-path=PATH     load .wav files from directory PATH
