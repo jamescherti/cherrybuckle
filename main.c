@@ -74,7 +74,7 @@ static int opt_gain = 100;
 static int opt_fallback_sound = 0;
 static int opt_mute_keycode = DEFAULT_MUTE_KEYCODE;
 static const char *opt_device = NULL;
-static const char *opt_path_audio = PATH_AUDIO;
+static const char *opt_path_audio = PATH_CHERRY_MX_BLUE_AUDIO;
 static int muted = 0;
 
 
@@ -109,9 +109,8 @@ int main(int argc, char **argv)
 			       short_opts, long_opts, &idx)) != -1) {
 		switch(c) {
 			case 'b':
-				fprintf(stderr, "Using Cherry MX Blue sounds\n");
-				opt_fallback_sound = 1;
-				opt_path_audio = PATH_CHERRY_MX_BLUE_AUDIO;
+				printf("Using Bucklespring sounds\n");
+				opt_path_audio = PATH_AUDIO;
 			case 'd':
 				opt_device = optarg;
 				break;
@@ -153,6 +152,11 @@ int main(int argc, char **argv)
 				return 1;
 				break;
 		}
+	}
+
+	if(strcmp(opt_path_audio, PATH_CHERRY_MX_BLUE_AUDIO) == 0) {
+		opt_fallback_sound = 1;
+		printf("Using Cherry MX Blue sounds\n");
 	}
 
 	if(opt_verbose) {
@@ -220,7 +224,7 @@ static void usage(char *exe)
 		"\n"
 		"options:\n"
 		"\n"
-		"  -b, --cherrymxblue        use Cherry MX Blue sounds instead\n"
+		"  -b, --bucklespring        use Bucklespring sounds instead\n"
 		"  -d, --device=DEVICE       use OpenAL audio device DEVICE\n"
 		"  -f, --fallback-sound      use a fallback sound for unknown keys\n"
 		"  -g, --gain=GAIN           set playback gain [0..100]\n"

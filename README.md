@@ -1,23 +1,12 @@
-# Mechanical Keyboard Simulator (Bucklespring or Cherry MX Blue)
+# Cherry MX Blue mechanical keyboard simulator (compatible with Linux)
 
-This project emulates the sound of the:
-- IBM Model-M Space Saver Bucklespring keyboard
-- A keyboard with Cherry MX Blue keyswitches
+For those nostalgic for the era of tactile and auditory feedback from typing on a physical keyboard, Cherrybuckle can be utilized on Linux as a Cherry MX Blue Mechanical Keyboard Simulator.
 
-Cherrybuckle runs as a background process and plays back the sound of each key pressed and released on your keyboard. The sound of each key has been carefully sampled and is played back while simulating the proper distance and direction for a realistic 3D sound palette of pure nostalgic bliss.
-
-To temporarily silence Cherrybuckle, for example, to enter secrets, press Scroll Lock twice (but be aware that those Scroll Lock events are delivered to the application); do the same to unmute. The keycode for muting can be changed with the '-m' option. Use keycode 0 to disable the mute function.
-
-## Supported keyboards/keyswitches
-
-### IBM Model-M Space Saver Bucklespring keyboard
-
-![Model M](img/model-m.jpg)
-![Buckle](img/buckle.gif)
-
-### Cherry MX Blue keyswitches
+Cherrybuckle runs as a background process and plays back the sound of each key pressed and released on your keyboard.
 
 ![Cherry MX Blue](img/cherrymxblue.gif)
+
+To temporarily silence Cherrybuckle, for example, to enter secrets, press Scroll Lock twice (but be aware that those Scroll Lock events are delivered to the application); do the same to unmute. The keycode for muting can be changed with the '-m' option. Use keycode 0 to disable the mute function.
 
 ## Links
 - GitHub: https://github.com/jamescherti/cherrybuckle
@@ -28,12 +17,13 @@ To temporarily silence Cherrybuckle, for example, to enter secrets, press Scroll
 
 ##### Dependencies
 
-Debian/Ubuntu dependencies:
-- libalure-dev
-- libopenal-dev
-- libx11-dev
-- libxtst-dev
-- pkg-config
+Dependencies: libalure, libopenal, libx11, libxtst.
+
+The dependencies can be installed on a Debian or Ubuntu system using the following commands:
+```
+$ sudo apt-get install build-essential git
+$ sudo apt-get install libalure-dev libx11-dev libxtst-dev pkg-config
+```
 
 ##### Building on GNU/Linux
 
@@ -86,7 +76,7 @@ usage: ./cherrybuckle [options]
 
 options:
 
-  -b, --cherrymxblue        use Cherry MX Blue sounds instead
+  -b, --bucklespring        use Bucklespring sounds instead
   -d, --device=DEVICE       use OpenAL audio device DEVICE
   -f, --fallback-sound      use a fallback sound for unknown keys
   -g, --gain=GAIN           set playback gain [0..100]
