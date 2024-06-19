@@ -1,4 +1,4 @@
-# Cherry MX Blue mechanical keyboard simulator (compatible with Linux)
+# Cherrybuckle - Cherry MX Blue mechanical keyboard simulator (compatible with Linux)
 
 For those nostalgic for the era of tactile and auditory feedback from typing on a physical keyboard, Cherrybuckle can be utilized on Linux as a Cherry MX Blue Mechanical Keyboard Simulator.
 
