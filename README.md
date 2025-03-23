@@ -37,6 +37,8 @@ $ make
 $ ./cherrybuckle
 ```
 
+This only works with X11/Xorg and does not yet support Wayland.
+
 ###### Option 2: Libinput
 
 The default Linux build relies on X11 for capturing events. If you intend to use it on the Linux console or Wayland display server, you can configure it to read events from the raw input devices located in /dev/input. Keep in mind that this will require special permissions to access the devices. To make it use libinput, build with the following command:
