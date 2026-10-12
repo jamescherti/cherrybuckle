@@ -1,16 +1,13 @@
 # Cherrybuckle - Cherry MX Blue mechanical keyboard simulator (compatible with Linux)
 ![License](https://img.shields.io/github/license/jamescherti/cherrybuckle)
 
+[Cherrybuckle](https://github.com/jamescherti/cherrybuckle) runs as a background process and plays back the sound of each key pressed and released on your keyboard.
+
 For those nostalgic for the era of tactile and auditory feedback from typing on a physical keyboard, Cherrybuckle can be utilized on Linux as a Cherry MX Blue Mechanical Keyboard Simulator.
 
-Cherrybuckle runs as a background process and plays back the sound of each key pressed and released on your keyboard.
-
-![Cherry MX Blue](img/cherrymxblue.gif)
+![Cherry MX Blue](https://github.com/jamescherti/cherrybuckle/blob/develop/img/cherrymxblue.gif)
 
 To temporarily silence Cherrybuckle, for example, to enter secrets, press Scroll Lock twice (but be aware that those Scroll Lock events are delivered to the application); do the same to unmute. The keycode for muting can be changed with the '-m' option. Use keycode 0 to disable the mute function.
-
-## Links
-- GitHub: https://github.com/jamescherti/cherrybuckle
 
 ## Building
 
@@ -150,3 +147,7 @@ Authors
 - somini
 - tensorknower69
 - tnagorra
+
+## Links
+- [cherrybuckle @GitHub](https://github.com/jamescherti/cherrybuckle)
+
