@@ -1,7 +1,7 @@
 # Cherrybuckle - Cherry MX Blue mechanical keyboard simulator (compatible with Linux)
 ![License](https://img.shields.io/github/license/jamescherti/cherrybuckle)
 
-- Author: James Cherti <[https://www.jamescherti.com/](https://www.jamescherti.com/)>
+- Maintainer: James Cherti <[https://www.jamescherti.com/](https://www.jamescherti.com/)>
 - License: GPL
 
 [Cherrybuckle](https://github.com/jamescherti/cherrybuckle) runs as a background process and plays back the sound of each key pressed and released on your keyboard.
